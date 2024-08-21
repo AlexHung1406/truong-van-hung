@@ -1,0 +1,23 @@
+package bai1;
+import java.util.Scanner;  
+
+public class Bai1 {
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap so nguyen t1: ");
+        int soThuNhat = scanner.nextInt();        
+        System.out.print("Nhap so nguyen t2: ");
+        int soThuHai = scanner.nextInt();
+        int tong = soThuNhat + soThuHai;
+        int hieu = soThuNhat - soThuHai;
+        int tich = soThuNhat * soThuHai;
+        int thuong = soThuNhat / soThuHai;
+        int du = soThuNhat % soThuHai;
+        System.out.println("Tong: " + soThuNhat + " + " + soThuHai + " = " + tong);
+        System.out.println("Hieu: " + soThuNhat + " - " + soThuHai + " = " + hieu);
+        System.out.println("Tich: " + soThuNhat + " * " + soThuHai + " = " + tich);
+        System.out.println("Thuong: " + soThuNhat + " / " + soThuHai + " = " + thuong);
+        System.out.println("Phan du: " + soThuNhat + " % " + soThuHai + " = " + du);
+        scanner.close();
+    }
+}
